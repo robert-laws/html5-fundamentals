@@ -1,0 +1,33 @@
+{
+  "name": "dev-gulp-basics-2",
+  "version": "1.0.0",
+  "description": "gulp development environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robert-laws/dev-gulp-basics-2.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "Robert Laws",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robert-laws/dev-gulp-basics-2/issues"
+  },
+  "homepage": "https://github.com/robert-laws/dev-gulp-basics-2#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "express": "^4.16.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.2.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8"
+  }
+}
