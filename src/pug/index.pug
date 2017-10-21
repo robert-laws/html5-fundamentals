@@ -2,12 +2,35 @@ doctype html
 html.no-js
   head
     include includes/head.pug
-    title Our Pug Project
+    title Our HTML5 Project
 
   body
 
     include includes/mixins.pug
 
     include includes/navigation.pug
+
+    section
+      h1#title HTML5 Fundamentals
+    
+      article
+        h2 Article One
+
+        p.latin
+          |Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum natus dolores et itaque explicabo quae quisquam similique nemo delectus laudantium.
+
+        p another paragraph
+
+      article 
+        h2 Article Two
+
+        ul.items
+          li.one Item One
+          li.two Item Two
+          li.three Item Three
+          li.four Item Four
+          li.five Item Five
+
+      article#stash
 
     include includes/footer.pug
