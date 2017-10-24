@@ -12,7 +12,45 @@ html.no-js
 
     section
       h1#title HTML5 Forms
-    
-      
+
+      h3 Input Picker
+      +preCode("<input list='colors'>")
+      p
+        |This works like a regular text input field, but allows some pre-defined options to be added that will display as the user types it there are matches.
+      input(list="colors" placeholder="type a color name" autofocus)
+      datalist#colors
+        option(value="blue")
+        option(value="red")
+        option(value="white")
+        option(value="orange")
+        option(value="yellow")
+      hr
+
+      h3 Email Input
+      +preCode("<input type='email'>")
+      p
+        |Used as a normal text field, but will bring up contextual controls in a mobile device if set up for that use.
+      input(type="email" placeholder="Email")
+      hr
+
+      h3 Form Validation
+      +preCode("<input type='text' required value=''>")
+      p
+        |The input field with a required attribute will return true if the value attribute is empty.
+      input(type="text" required value="")
+      hr
+
+      h3 Type Mismatch
+      +preCode("<input type='url' value='hi'>")
+      p
+        |Will return true when the declared type does not match the value format expected
+      input(type='url' value='hi')
+      hr
+
+      h3 Range Overflow
+      +preCode("<input type='range' min='3' max='5' value='9'>")
+      p
+        |Will return true if the range declared in max has been exceeded by the value.
+      input(type='range' min='3' max='5' value='9')
 
     include includes/footer.pug

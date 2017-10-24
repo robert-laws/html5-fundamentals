@@ -10,13 +10,5 @@ mixin topNav()
       li(id= navItem.navId)
         a(href= navItem.navLink)= navItem.navText
 
-mixin skillinfo(skillTitle, skillDesc, src)
-  h2= skillTitle
-  p= skillDesc
-
-  img.skill-icon(src= src)
-
-mixin skills(...items)
-  ul(class= 'skills')
-    each item in items
-      li= item
+mixin preCode(code)
+  pre= code
