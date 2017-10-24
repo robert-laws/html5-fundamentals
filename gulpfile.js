@@ -18,7 +18,7 @@ gulp.task('browserSync', function() {
 })
 
 gulp.task('html', function() {
-  gulp.src('./src/pug/index.pug')
+  gulp.src('./src/pug/*.pug')
     .pipe(data(function(file) {
       return require('./src/data/nav.json')
     }))
