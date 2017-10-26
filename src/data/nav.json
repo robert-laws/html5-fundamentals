@@ -2,6 +2,7 @@
   "navLinks": [
     {"navId": "home", "navLink": "/", "navText": "Home"},
     {"navId": "forms", "navLink": "/forms.html", "navText": "Forms"},
+    {"navId": "form_validate", "navLink": "/form_validate.html", "navText": "Form Validation"},
     {"navId": "tools", "navLink": "#", "navText": "Tools"},
     {"navId": "about", "navLink": "#", "navText": "About Us"},
     {"navId": "contact", "navLink": "#", "navText": "Contact"}

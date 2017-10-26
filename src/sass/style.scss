@@ -59,3 +59,45 @@ section {
     margin: 12px 0;
   }
 }
+
+/************* FORM VALIDATION ***************/
+article.validation {
+  input {
+    height: 30px;
+    margin: 14px 0 0;
+    padding: 10px;
+    width: 300px;
+    border-top: transparent;
+  }
+
+  input[type=submit] {
+    width: 100px;
+    border: 1px solid #333 !important;
+    border-radius: 5px;
+    padding-bottom: 25px;
+  }
+
+  input[type=submit]:hover {
+    background-color: rgb(131, 213, 228);
+  }
+  
+  input:valid + .invalid { /* adjacent sibling selector */
+    visibility: hidden;
+  }
+
+  input:invalid + .invalid { /* adjacent sibling selector */
+    visibility: visible;
+  }
+
+  input:required {
+    border-bottom: 2px solid #c33;
+  }
+
+  .invalid {
+    color: #999;
+  }
+
+  input:valid {
+    border-bottom: 2px solid rgb(70, 162, 238);
+  }
+}

@@ -12,3 +12,44 @@ mixin topNav()
 
 mixin preCode(code)
   pre= code
+
+mixin formatCssCode(type, ...args)
+  pre
+    span= type
+    |
+    - var count = args.length - 1
+    each val, index in args      
+      if index == 0
+        |
+        |#{val}
+      else if index == count
+        |
+        |#{val}
+      else
+        |
+        |   #{val}
+
+mixin formatHtmlCodeComplex(type, levels, ...args)
+  pre
+    span= type
+    |
+    - var count = args.length - 1
+    each val, index in args      
+      if index == 0
+        |
+        |#{val}
+      else if index == count
+        |
+        |#{val}
+      else if levels == true
+        |
+        |   #{val}
+      else
+        |
+        |#{val}
+
+mixin formatHtmlCodeSimple(type, code)
+  pre
+    span= type
+    |
+    |#{code}

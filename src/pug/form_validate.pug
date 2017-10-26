@@ -1,0 +1,26 @@
+doctype html
+html.no-js
+  head
+    include includes/head.pug
+    title HTML5 Forms
+
+  body
+
+    include includes/mixins.pug
+
+    include includes/navigation.pug
+
+    section
+      h1#title HTML5 Forms
+
+      article.validation
+
+        form
+          input(type="text" id="username" name="username" pattern="[a-zA-Z]{5,}" placeholder="username" maxlength="30" required autofocus)
+          .invalid the username must be a series of alphabetical characarters
+          input(type="email" id="email" name="email" placeholder="password" required)
+          .invalid the email address cannot include any special characters except '.' and '@'
+          input(type="submit")
+          
+
+    include includes/footer.pug
